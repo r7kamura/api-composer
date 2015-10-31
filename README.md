@@ -58,6 +58,7 @@ $ cat actions/list_users/package.json
   "name": "list_users",
   "private": true,
   "fluct": {
+    "arn": "arn:aws:lambda:us-east-1:549958975024:function:foo",
     "contentType": "text/html",
     "httpMethod": "GET",
     "path": "/users",
