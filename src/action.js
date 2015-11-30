@@ -156,7 +156,7 @@ export default class Action {
    * @return {Integer}
    */
   getTimeout() {
-    return 60;
+    return this.getMetadata().fluct.timeout || 60;
   }
 
   /**
