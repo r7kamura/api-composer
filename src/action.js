@@ -169,6 +169,13 @@ export default class Action {
   /**
    * @return {String}
    */
+  getRuntime() {
+    return this.getMetadata().fluct.runtime || 'nodejs4.3';
+  }
+
+  /**
+   * @return {String}
+   */
   getUri() {
     return `arn:aws:apigateway:${this.application.getRegion()}:lambda:path/2015-03-31/functions/${this.getFunctionArn()}/invocations`;
   }
